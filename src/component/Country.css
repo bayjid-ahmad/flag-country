@@ -1,0 +1,16 @@
+.country {
+  border: 3px solid red;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.country-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.visited{
+  background-color: blue;
+}
+.not-visited{
+  background-color: red;
+}
