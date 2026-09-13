@@ -1,0 +1,1 @@
+.container{border:3px solid red;border-radius:20px;flex-wrap:wrap;margin:20px;padding:20px;display:flex}.country{border:3px solid red;border-radius:20px;margin:20px;padding:20px}.country-container{grid-template-columns:repeat(2,1fr);display:grid}.visited{background-color:#00f}.not-visited{background-color:red}
