@@ -13,12 +13,16 @@ export default function Countries(){
 
  
 
-    const handleVisitedCountry =country=>{
-        console.log(country)
-        console.log("added country")
-        const newVisitedCountry = [...visitedCountries, country]
-        setVisitedCountries(newVisitedCountry)
-        
+    const handleVisitedCountry = (country, isVisited) => {
+        setVisitedCountries(currentCountries => {
+            if (isVisited) {
+                return currentCountries.some(visitedCountry => visitedCountry.cca3 === country.cca3)
+                    ? currentCountries
+                    : [...currentCountries, country]
+            }
+
+            return currentCountries.filter(visitedCountry => visitedCountry.cca3 !== country.cca3)
+        })
     }
     return(
         <div>
